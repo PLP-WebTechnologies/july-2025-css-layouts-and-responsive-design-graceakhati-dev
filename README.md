@@ -49,7 +49,7 @@ Edit
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-link>
+   git clone <[your-repo-link](https://github.com/PLP-WebTechnologies/july-2025-css-layouts-and-responsive-design-graceakhati-dev.git)>
 Open the folder in your code editor (e.g., VS Code).
 
 Open index.html in your browser to view the main website.
@@ -62,9 +62,6 @@ HTML5
 CSS3 (Flexbox, Grid, Media Queries)
 
 Google Fonts
-
-📸 Screenshots (Optional)
-Add screenshots of your site and flexbox demo here for better presentation.
 
 📧 Contact
 Email: skipperzclub@gmail.com
