@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Demo - Skipperz Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #ff6b6b;
+      --secondary-color: #4ecdc4;
+      --accent-color: #ffe66d;
+      --dark-color: #292f36;
+      --light-color: #f7fff7;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-color);
+      padding: 2rem;
+    }
+    
+    h1, h2 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    /* Flexbox Examples */
+    .flex-container {
+      display: flex;
+      background-color: var(--secondary-color);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      gap: 1rem;
+    }
+    
+    .flex-item {
+      background-color: var(--accent-color);
+      padding: 1rem;
+      border-radius: 4px;
+      text-align: center;
+      flex: 1;
+    }
+    
+    /* Different Flex Directions */
+    .flex-row {
+      flex-direction: row;
+    }
+    
+    .flex-column {
+      flex-direction: column;
+    }
+    
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    
+    /* Justify Content Examples */
+    .justify-start {
+      justify-content: flex-start;
+    }
+    
+    .justify-center {
+      justify-content: center;
+    }
+    
+    .justify-end {
+      justify-content: flex-end;
+    }
+    
+    .justify-between {
+      justify-content: space-between;
+    }
+    
+    .justify-around {
+      justify-content: space-around;
+    }
+    
+    /* Align Items Examples */
+    .align-stretch {
+      align-items: stretch;
+      height: 200px;
+    }
+    
+    .align-start {
+      align-items: flex-start;
+      height: 200px;
+    }
+    
+    .align-center {
+      align-items: center;
+      height: 200px;
+    }
+    
+    .align-end {
+      align-items: flex-end;
+      height: 200px;
+    }
+    
+    .tall-item {
+      height: 150px;
+    }
+    
+    /* Responsive Flexbox */
+    @media (max-width: 768px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Flexbox Demonstration</h1>
+    <p>This page showcases different Flexbox properties used in the Skipperz Club website.</p>
+    
+    <h2>Flex Direction</h2>
+    <div class="flex-container flex-row">
+      <div class="flex-item">Row Item 1</div>
+      <div class="flex-item">Row Item 2</div>
+      <div class="flex-item">Row Item 3</div>
+    </div>
+    
+    <div class="flex-container flex-column">
+      <div class="flex-item">Column Item 1</div>
+      <div class="flex-item">Column Item 2</div>
+      <div class="flex-item">Column Item 3</div>
+    </div>
+    
+    <h2>Justify Content</h2>
+    <div class="flex-container justify-start">
+      <div class="flex-item">Start 1</div>
+      <div class="flex-item">Start 2</div>
+    </div>
+    
+    <div class="flex-container justify-center">
+      <div class="flex-item">Center 1</div>
+      <div class="flex-item">Center 2</div>
+    </div>
+    
+    <div class="flex-container justify-between">
+      <div class="flex-item">Between 1</div>
+      <div class="flex-item">Between 2</div>
+      <div class="flex-item">Between 3</div>
+    </div>
+    
+    <h2>Align Items</h2>
+    <div class="flex-container align-stretch">
+      <div class="flex-item">Stretch</div>
+      <div class="flex-item tall-item">Tall Item</div>
+      <div class="flex-item">Stretch</div>
+    </div>
+    
+    <div class="flex-container align-center">
+      <div class="flex-item">Center</div>
+      <div class="flex-item tall-item">Tall Item</div>
+      <div class="flex-item">Center</div>
+    </div>
+    
+    <h2>Flex Wrap</h2>
+    <div class="flex-container flex-wrap">
+      <div class="flex-item" style="min-width: 300px;">Wrapped Item 1</div>
+      <div class="flex-item" style="min-width: 300px;">Wrapped Item 2</div>
+      <div class="flex-item" style="min-width: 300px;">Wrapped Item 3</div>
+    </div>
+    
+    <h2>Navigation Example (Used in Main Site)</h2>
+    <nav class="flex-container justify-center">
+      <div class="flex-item">About</div>
+      <div class="flex-item">Activities</div>
+      <div class="flex-item">Team</div>
+      <div class="flex-item">Join</div>
+      <div class="flex-item">Contact</div>
+    </nav>
+  </div>
+</body>
+</html>
